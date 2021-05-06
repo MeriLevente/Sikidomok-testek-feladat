@@ -17,13 +17,15 @@ body {
   background-attachment: fixed;
 }
 
-#paralelogramma { 
-  text-align: center;
+#paralelogramma {
+  font-size: 23px;
+  max-width: 100%;
+  text-align: left;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
 #trapez {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
