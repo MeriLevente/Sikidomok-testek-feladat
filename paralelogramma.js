@@ -16,7 +16,7 @@ function paralelogramma() {
     return
   }
   if (b_oldal == 0 || b_oldal < 0) {
-    alert("Az b oldal nem lehet 0 vagy negatív szám!")
+    alert("A b oldal nem lehet 0 vagy negatív szám!")
     return
   }
   if (ma == 0 || ma < 0) {
@@ -24,13 +24,13 @@ function paralelogramma() {
     return
   }
   if (mb == 0 || mb < 0) {
-    alert("Az b-hez tartozó magasság nem lehet 0 vagy negatív szám!")
+    alert("A b-hez tartozó magasság nem lehet 0 vagy negatív szám!")
     return
   }
   var paralelogramma_k = (a_oldal + b_oldal) * 2;
   document.getElementById("paralelogramma_k").value =
-    paralelogramma_k.toLocaleString() + " cm";
+    paralelogramma_k.toLocaleString() + "";
   var paralelogramma_t = a_oldal * ma || b_oldal * mb;
   document.getElementById("par_t").value =
-    paralelogramma_t.toLocaleString() + " cm";
+    paralelogramma_t.toLocaleString() + "";
 }

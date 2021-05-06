@@ -23,9 +23,9 @@
     <div class="container border" id="hatterszin">
         <header class="container">
             <h1 id="cim">Síkidomok és testek</h1>
-        </header> 
+        </header>
         <div class="container-fluid">
-            <div class="row"> 
+            <div class="row">
                 <div class="p-5 col-lg-6 border">
                     <h1 id="paralelogramma">Paralelogramma</h1>
                     <p>A <a href="https://hu.wikipedia.org/wiki/Paralelogramma">paralelogramma</a> olyan négyszög, amelynek két-két szemközti oldala párhuzamos.</p>
@@ -33,52 +33,53 @@
                     <ul><b>T</b> = a * m<sub>a</sub> vagy T = b * m<sub>b</sub></ul>
                     <img class="abra" src="képek/paralelogramma_abra.gif" alt="Paralelogramma ábra">
                     <div class="row mb-2">
+                        
                         <div class="col-12 col-md-4">
                             <label for="a_oldal" style="font-weight: bold;font-style: italic;">a:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="a_oldal" min="0">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="a_oldal"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="b_oldal" style="font-weight: bold;font-style: italic;">b:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="b_oldal" min="0">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="b_oldal"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="ma" style="font-weight: bold;font-style: italic;">m<sub>a</sub> :</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="ma" min="0">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="ma"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="mb" style="font-weight: bold;font-style: italic;">m<sub>b</sub> :</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="mb" min="0">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="mb"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="p_k" style="font-weight: bold;">Kerület:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="paralelogramma_k" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="paralelogramma_k" disabled> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="par_t" style="font-weight: bold;">Terület:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="par_t" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="par_t" disabled> cm<sup>2</sup>
+                        </form>
                     </div>
                     <button type="button" class="btn btn-secondary" onclick="paralelogramma()">Kiszámolás</button>
                 </div>
@@ -92,57 +93,57 @@
                         <div class="col-12 col-md-4">
                             <label for="a_oldal" style="font-weight: bold;font-style: italic;">a:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="trapez_a">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="trapez_a"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
-                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">b:</label>
+                            <label for="b_oldal" style="font-weight: bold;font-style: italic;">b:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="trapez_b">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="trapez_b"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="c_oldal" style="font-weight: bold;font-style: italic;">c:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="trapez_c">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="trapez_c"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
-                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">d:</label>
+                            <label for="d_oldal" style="font-weight: bold;font-style: italic;">d:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="trapez_d">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="trapez_d"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="c_oldal" style="font-weight: bold;font-style: italic;">m:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="trapez_magassag">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="trapez_magassag"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="t_k" style="font-weight: bold;">Kerület:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="trapez_k" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="trapez_k" disabled>cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="t_t" style="font-weight: bold;">Terület:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="trapez_t" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="trapez_t" disabled> cm<sup>2</sup>
+                        </form>
                     </div>
                     <button type="button" class="btn btn-secondary" onclick="trapez()">Kiszámolás</button>
                 </div>
@@ -165,25 +166,25 @@
                         <div class="col-12 col-md-4">
                             <label for="kocka_a" style="font-weight: bold;font-style: italic;">a:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="kocka_a_oldal">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="kocka_a_oldal"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="k_a" style="font-weight: bold;">Felszín:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="kocka_a" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="kocka_a" disabled> cm<sup>2</sup>
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="k_v" style="font-weight: bold;">Térfogat:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="kocka_v" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="kocka_v" disabled> cm <sup>3</sup>
+                        </form>
                     </div>
                     <button type="button" class="btn btn-secondary" onclick="kocka()">Kiszámolás</button>
                     <img class="abra" src="képek/kockahalo.gif" alt="Kocka_hálója" title="Kocka hálója">
@@ -198,33 +199,33 @@
                         <div class="col-12 col-md-4">
                             <label for="sugar" style="font-weight: bold;font-style: italic;">r:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="sugar">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="sugar"> cm
+                        </form> 
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="henger_magassag" style="font-weight: bold;font-style: italic;">m:</label>
                         </div>
-                        <div class="col-12 col-md-8">
-                            <input class="form-control" type="text" id="henger_magassag">
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input class="form-control" type="text" id="henger_magassag"> cm
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="h_a" style="font-weight: bold;">Felszín:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="henger_a" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="henger_a" disabled> cm<sup>2</sup>
+                        </form>
                     </div>
                     <div class="row mb-2">
                         <div class="col-12 col-md-4">
                             <label for="h_v" style="font-weight: bold;">Térfogat:</label>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" class="form-control" id="henger_v" disabled>
-                        </div>
+                        <form role="form" class="form-inline">
+                            <input type="text" class="form-control" id="henger_v" disabled> cm<sup>3</sup>
+                        </form>
                     </div>
                     <button type="button" class="btn btn-secondary" onclick="henger()">Kiszámolás</button>
                 </div>
