@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="http-equiv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Síkidomok</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="trapez.js"></script>
+    <script src="paralelogramma.js"></script>
+    <script src="kocka.js"></script>
+    <script src="henger.js"></script>
+</head>
+
+<body>
+    <div class="container border" id="hatterszin">
+        <header class="container">
+            <h1 id="cim">Síkidomok és testek</h1>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="p-5 col-lg-6 border">
+                    <h1 id="paralelogramma">Paralelogramma</h1>
+                    <p>A <a href="https://hu.wikipedia.org/wiki/Paralelogramma">paralelogramma</a> olyan négyszög, amelynek két-két szemközti oldala párhuzamos.</p>
+                    <ul><b>K</b> = (a + b) * 2</ul>
+                    <ul><b>T</b> = a * m<sub>a</sub> vagy T = b * m<sub>b</sub></ul>
+                    <img class="abra" src="képek/paralelogramma_abra.gif" alt="Paralelogramma ábra">
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="a_oldal" style="font-weight: bold;font-style: italic;">a:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="a_oldal" min="0">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="b_oldal" style="font-weight: bold;font-style: italic;">b:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="b_oldal" min="0">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="ma" style="font-weight: bold;font-style: italic;">m<sub>a</sub> :</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="ma" min="0">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="mb" style="font-weight: bold;font-style: italic;">m<sub>b</sub> :</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="mb" min="0">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="p_k" style="font-weight: bold;">Kerület:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="paralelogramma_k" disabled>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="par_t" style="font-weight: bold;">Terület:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="par_t" disabled>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="paralelogramma()">Kiszámolás</button>
+                </div>
+                <div class="p-5 col-lg-6 border">
+                    <h1 id="trapez">Trapéz</h1>
+                    <p>Trapéz fajtái: <a href="https://hu.wikipedia.org/wiki/Trap%C3%A9z">trapéz</a>(ábrán), <a href="https://hu.wikipedia.org/wiki/H%C3%BArtrap%C3%A9z">húrtrapéz</a>, <a href="https://matek4u.hu/geometria/trapez/">derékszögű trapéz</a> </p>
+                    <p><b>K</b> = a + b + c + d</p>
+                    <p><b>T</b> = (a + c)/ 2 * m</p>
+                    <img class="abra" src="képek/trapéz2.png" alt="Trapéz ábra">
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="a_oldal" style="font-weight: bold;font-style: italic;">a:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="trapez_a">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">b:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="trapez_b">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">c:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="trapez_c">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">d:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="trapez_d">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="c_oldal" style="font-weight: bold;font-style: italic;">m:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="trapez_magassag">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="t_k" style="font-weight: bold;">Kerület:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="trapez_k" disabled>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="t_t" style="font-weight: bold;">Terület:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="trapez_t" disabled>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="trapez()">Kiszámolás</button>
+                </div>
+                <div class="p-5 col-lg-6 border">
+                    <h1 id="kocka">Kocka</h1>
+                    <div class="box">
+                        <div class="inner">
+                            <span>Kocka</span>
+                        </div>
+                        <div class="inner">
+                            <span>Kocka</span>
+                        </div>
+                    </div>
+
+                    <p><b>A</b> = 6 * a<sup>2</sup></p>
+                    <p><b>V</b> = a<sup>3</sup></p>
+                    <p>A <a href="https://matek4u.hu/geometria/a-kocka-terfogata-es-felszine/">kocka</a> egy olyan téglatest,amelynek minden éle egyenlő. A kocka az öt szabályos test egyike, így minden éle, élszöge és lapszöge egyenlő</p>
+                    <img class="kocka_abra" src="képek/kocka2.gif" alt="Kocka ábra">
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="kocka_a" style="font-weight: bold;font-style: italic;">a:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="kocka_a_oldal">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="k_a" style="font-weight: bold;">Felszín:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="kocka_a" disabled>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="k_v" style="font-weight: bold;">Térfogat:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="kocka_v" disabled>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="kocka()">Kiszámolás</button>
+                    <img class="abra" src="képek/kockahalo.gif" alt="Kocka_hálója" title="Kocka hálója">
+                </div>
+                <div class="p-5 col-lg-6 border">
+                    <h1 id="henger">Henger</h1>
+                    <p>A <a href="https://www.nkp.hu/tankonyv/matematika_7/lecke_06_011">hengernek</a> két egybevágó, párhuzamos körlapja, amiket egy görbült lap határol.</p>
+                    <p><b>A</b> = 2 · r<sup>2</sup> · π + 2 · r · π · m = 2 · r · π · (r + m)</p>
+                    <p><b>V</b> = r<sup>2</sup> · π ∙ m</p>
+                    <img class="henger_abra" src="képek/imageedit_4_9692583682.png" alt="Henger ábra">
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="sugar" style="font-weight: bold;font-style: italic;">r:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="sugar">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="henger_magassag" style="font-weight: bold;font-style: italic;">m:</label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="text" id="henger_magassag">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="h_a" style="font-weight: bold;">Felszín:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="henger_a" disabled>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="h_v" style="font-weight: bold;">Térfogat:</label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="text" class="form-control" id="henger_v" disabled>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="henger()">Kiszámolás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
