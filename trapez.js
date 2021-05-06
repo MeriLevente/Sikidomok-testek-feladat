@@ -25,22 +25,22 @@ function trapez() {
         return
       }
       if (b_oldal == 0 || b_oldal < 0) {
-        alert("Az b oldal nem lehet 0 vagy negatív szám!")
+        alert("A b oldal nem lehet 0 vagy negatív szám!")
         return
       }
       if (c_oldal == 0 || c_oldal < 0) {
-        alert("Az c oldal nem lehet 0 vagy negatív szám!")
+        alert("A c oldal nem lehet 0 vagy negatív szám!")
         return
       }
       if (d_oldal == 0 || d_oldal < 0) {
-        alert("Az d oldal nem lehet 0 vagy negatív szám!")
+        alert("A d oldal nem lehet 0 vagy negatív szám!")
         return
       }
       if (magassag == 0 || magassag < 0) {
-        alert("Az magasság nem lehet 0 vagy negatív szám!")
+        alert("A magasság nem lehet 0 vagy negatív szám!")
         return
       }
-    document.getElementById('trapez_k').value = trapez_k.toLocaleString() + " cm";
+    document.getElementById('trapez_k').value = trapez_k.toLocaleString();
     var trapez_t = ((a_oldal + c_oldal)/2) * magassag
-    document.getElementById('trapez_t').value = trapez_t.toLocaleString() + " cm";
+    document.getElementById('trapez_t').value = trapez_t.toLocaleString();
 }

@@ -10,7 +10,7 @@ function kocka() {
       return
     }
     document.getElementById("kocka_a").value =
-    kocka_a.toLocaleString() + " cm";
+    kocka_a.toLocaleString();
   document.getElementById("kocka_v").value =
-    kocka_v.toLocaleString() + " cm";
+    kocka_v.toLocaleString();
 }
